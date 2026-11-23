@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy × Cloud | 자기소개</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">E<span>×</span>C</a>
+    <nav aria-label="주 메뉴">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#studies">My Studies</a>
+      <a href="#contact">Contact</a>
+      <a href="#guestbook">Guestbook</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">ENERGY × CLOUD</p>
+        <h1>안녕하세요,<br>저를 소개합니다.</h1>
+        <p class="hero-copy">에너지자원공학을 공부하고, 클라우드 기술로 데이터의 새로운 가능성을 알아가고 있습니다.</p>
+        <a class="primary-button" href="#about">더 알아보기 <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="에너지와 클라우드를 상징하는 그래픽">
+        <div class="sun"></div>
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="hill hill-back"></div>
+        <div class="hill hill-front"></div>
+        <div class="art-label">A better way<br>to connect data<br>and energy.</div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="section-heading">
+        <p class="eyebrow">01 / ABOUT ME</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-card">
+        <div class="profile-mark">ME</div>
+        <div>
+          <p class="small-label">INTRODUCTION</p>
+          <h3>반갑습니다!</h3>
+          <p>에너지자원공학을 전공하며 에너지와 자원 분야를 공부하고 있습니다. 클라우드융합 관련 수업을 통해 데이터베이스와 클라우드 기술에도 관심을 갖게 되었고, 두 분야를 연결해 활용할 수 있는 방법을 알아가고 있습니다.</p>
+          <div class="tags"><span>Energy Resources</span><span>Cloud Computing</span><span>Database</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="studies" class="section studies-section">
+      <div class="section-heading">
+        <p class="eyebrow">02 / MY STUDIES</p>
+        <h2>My Studies</h2>
+        <p class="section-intro">전공에서 배운 지식과 클라우드 기술을 함께 살펴봅니다.</p>
+      </div>
+      <div class="study-grid">
+        <article class="study-card energy">
+          <div class="card-number">01</div>
+          <p class="small-label">MAJOR</p>
+          <h3>에너지자원공학</h3>
+          <p>에너지와 자원의 개발 및 활용에 관한 기초 지식을 배우고, 관련 산업과 기술을 이해합니다.</p>
+          <span class="card-foot">ENERGY & RESOURCES</span>
+        </article>
+        <article class="study-card cloud">
+          <div class="card-number">02</div>
+          <p class="small-label">CLOUD CONVERGENCE</p>
+          <h3>클라우드융합</h3>
+          <p>데이터베이스, SQL, 클라우드 서비스 등을 학습하며 데이터를 저장하고 관리하는 방법을 익힙니다.</p>
+          <span class="card-foot">CLOUD & DATABASE</span>
+        </article>
+      </div>
+      <div class="connection-note">
+        <span class="connection-icon">↗</span>
+        <div><strong>Energy × Cloud</strong><p>에너지 분야에서 발생하는 다양한 데이터를 클라우드에 저장하고 관리하는 기술에 관심이 있습니다.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">03 / CONTACT</p>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-card">
+        <div><p class="small-label">GET IN TOUCH</p><h3>궁금한 점이 있으신가요?</h3><p>아래 이메일로 연락할 수 있습니다.</p></div>
+        <a class="email-link" href="mailto:your-email@example.com">your-email@example.com <span>↗</span></a>
+      </div>
+      <p class="edit-hint">※ 이메일 주소는 본인의 주소로 변경해 주세요.</p>
+    </section>
+
+    <section id="guestbook" class="section guestbook-section">
+      <div class="section-heading">
+        <p class="eyebrow">04 / GUESTBOOK</p>
+        <h2>Guestbook</h2>
+        <p class="section-intro">방문해 주셔서 감사합니다. 간단한 메시지를 남겨주세요.</p>
+      </div>
+      <form id="guestbook-form" class="guestbook-form">
+        <label>이름<input id="guest-name" type="text" maxlength="30" placeholder="이름을 입력하세요" required></label>
+        <label>내용<textarea id="guest-message" maxlength="300" rows="4" placeholder="메시지를 입력하세요" required></textarea></label>
+        <button class="primary-button" type="submit">메시지 등록 <span>→</span></button>
+        <p class="form-note">현재는 화면 확인용으로 브라우저에 임시 저장됩니다. 추후 AWS AppSync와 DynamoDB를 연결할 수 있습니다.</p>
+      </form>
+      <div id="guestbook-list" class="guestbook-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#home">E<span>×</span>C</a><p>Energy × Cloud · Personal Introduction</p><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
